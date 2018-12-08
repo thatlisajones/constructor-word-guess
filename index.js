@@ -138,7 +138,8 @@ function restartGame() {
             }
         ])
         .then(function (input) {
-            if (input.restart === "Play again") {
+            console.log(input.restart);
+            if (input.restart === "play again") {
                 requireNewWord = true;
                 incorrectLetters = [];
                 correctLetters = [];
